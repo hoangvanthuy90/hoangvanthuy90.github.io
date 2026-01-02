@@ -7,23 +7,13 @@
 
   <style>
     body {
-      max-width: 850px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                    Roboto, Helvetica, Arial, sans-serif;
       color: #222;
       line-height: 1.6;
-    }
-
-    h1 {
-      margin-bottom: 5px;
-    }
-
-    h2 {
-      margin-top: 35px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
     }
 
     a {
@@ -35,83 +25,144 @@
       text-decoration: underline;
     }
 
+    h1 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 35px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    /* Top links */
+    .top-links {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 0.95em;
+    }
+
+    /* Header layout */
+    .header {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      margin-bottom: 35px;
+    }
+
+    .profile-img {
+      width: 180px;
+      border-radius: 6px;
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
+    .subtitle {
+      margin-top: 5px;
+      color: #555;
+    }
+
     ul {
       padding-left: 20px;
     }
 
     li {
-      margin-bottom: 8px;
-    }
-
-    .header-links {
-      margin-bottom: 25px;
+      margin-bottom: 10px;
     }
 
     .pub-year {
       font-weight: bold;
       margin-top: 15px;
     }
+
+    @media (max-width: 700px) {
+      .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .profile-img {
+        width: 160px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-<h1>Van Thuy Hoang</h1>
-
-<p>
-Ph.D. Student in Artificial Intelligence <br>
-The Catholic University of Korea
-</p>
-
-<div class="header-links">
+<!-- TOP LINKS -->
+<div class="top-links">
   <a href="mailto:hoangvanthuy90@gmail.com">Email</a> ·
   <a href="https://scholar.google.com.vn/citations?user=E7Cc8rAAAAAJ">Google Scholar</a> ·
   <a href="https://github.com/hoangvanthuy90">GitHub</a> ·
   <a href="Curriculum_Vitae_2507.pdf">CV (PDF)</a>
 </div>
 
-<h2>About</h2>
-<p>
-My research focuses on <strong>AI for Bioinformatics</strong>, developing strategies to analyze
-and interpret biomedical data such as molecular structures.
-I am particularly interested in using <strong>Graph Neural Networks (GNNs)</strong> and
-<strong>Large Language Models (LLMs)</strong> for knowledge discovery.
-</p>
+<!-- HEADER -->
+<div class="header">
+  <img src="profile.jpg" alt="Van Thuy Hoang" class="profile-img">
+
+  <div class="header-text">
+    <h1>Van Thuy Hoang</h1>
+    <p class="subtitle">
+      Ph.D. Student in Artificial Intelligence<br>
+      The Catholic University of Korea
+    </p>
+
+    <p>
+      My research focuses on <strong>AI for Bioinformatics</strong>, developing strategies
+      to analyze and interpret biomedical data such as molecular structures.
+      I am particularly interested in <strong>Graph Neural Networks (GNNs)</strong>,
+      <strong>Graph Transformers</strong>, and <strong>Large Language Models (LLMs)</strong>
+      for knowledge discovery.
+    </p>
+  </div>
+</div>
 
 <h2>Research Interests</h2>
 <ul>
   <li>Foundation Models: Pre-training & Adaptation, Self-Supervised Learning</li>
   <li>Graph Learning: Graph Structure Learning, Molecular Learning, Knowledge Graphs</li>
-  <li>AI for Bioinformatics: GNNs and Graph Transformers</li>
+  <li>AI for Bioinformatics: Graph Neural Networks, Graph Transformers</li>
   <li>Theoretical Foundations: Information Theory, Causal Inference, Multi-view Learning</li>
   <li>Explainable AI and Fairness Learning</li>
 </ul>
 
 <h2>Education</h2>
 <ul>
-  <li><strong>Ph.D. in Artificial Intelligence</strong>, The Catholic University of Korea, South Korea (2022 – Present, expected 2026)</li>
-  <li><strong>M.S. in Information System</strong>, Le Quy Don Technical University, Vietnam (2017 – 2018)</li>
-  <li><strong>B.S. in Information Technology</strong>, Le Quy Don Technical University, Vietnam (2008 – 2013)</li>
+  <li>
+    <strong>Ph.D. in Artificial Intelligence</strong>,
+    The Catholic University of Korea (2022 – Present, expected 2026)
+  </li>
+  <li>
+    <strong>M.S. in Information System</strong>,
+    Le Quy Don Technical University (2017 – 2018)
+  </li>
+  <li>
+    <strong>B.S. in Information Technology</strong>,
+    Le Quy Don Technical University (2008 – 2013)
+  </li>
 </ul>
 
-<h2>Publications</h2>
+<h2>Selected Publications</h2>
 
 <div class="pub-year">2025</div>
 <ul>
   <li>
     <strong>Van Thuy Hoang</strong>, O-Joun Lee.
-    <em>Pre-training Graph Neural Networks on Molecules by using Subgraph-conditioned Graph Information Bottleneck.</em>
-    Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI 2025).
+    <em>Pre-training Graph Neural Networks on Molecules by using
+    Subgraph-conditioned Graph Information Bottleneck.</em>
+    In Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI), 2025.
   </li>
   <li>
     <strong>Van Thuy Hoang</strong>, Hyeon-Ju Jeon, O-Joun Lee.
-    <em>Mitigating Degree Bias in Graph Representation Learning with Learnable Structural Augmentation and Structural Self-attention.</em>
-    IEEE Transactions on Network Science & Engineering, 2025.
-  </li>
-  <li>
-    <strong>Van Thuy Hoang</strong> et al.
-    <em>Halal or Not: Knowledge Graph Completion for Predicting Cultural Appropriateness of Daily Products.</em>
-    IEEE Access, 2025.
+    <em>Mitigating Degree Bias in Graph Representation Learning with Learnable
+    Structural Augmentation and Structural Self-attention.</em>
+    IEEE Transactions on Network Science and Engineering, 2025.
   </li>
 </ul>
 
@@ -119,34 +170,10 @@ I am particularly interested in using <strong>Graph Neural Networks (GNNs)</stro
 <ul>
   <li>
     <strong>Van Thuy Hoang</strong>, O-Joun Lee.
-    <em>Transitivity-Preserving Graph Representation Learning for Bridging Local Connectivity and Role-based Similarity.</em>
-    Proceedings of the 38th AAAI Conference on Artificial Intelligence (AAAI 2024).
+    <em>Transitivity-Preserving Graph Representation Learning for Bridging Local
+    Connectivity and Role-based Similarity.</em>
+    In Proceedings of the 38th AAAI Conference on Artificial Intelligence (AAAI), 2024.
   </li>
-  <li>
-    Nam-Gyu Jung, <strong>Van Thuy Hoang</strong>, O-Joun Lee, Chang Choi.
-    <em>Kiosk Recommendation System based on Self-Supervised Representation Learning of User Behaviors in Offline Retail.</em>
-    IEEE Internet of Things Journal, 2024.
-  </li>
-</ul>
-
-<div class="pub-year">Preprints</div>
-<ul>
-  <li>
-    <strong>Van Thuy Hoang</strong>, O-Joun Lee.
-    <em>A Survey on Structure-Preserving Graph Transformers.</em>
-    arXiv:2401.16176, 2024.
-  </li>
-  <li>
-    Thanh Sang Nguyen, Jooho Lee, <strong>Van Thuy Hoang</strong>, O-Joun Lee.
-    <em>Connector 0.5: A Unified Framework for Graph Representation Learning.</em>
-    arXiv:2304.13195, 2023.
-  </li>
-</ul>
-
-<h2>Academic Services</h2>
-<ul>
-  <li>Conference Reviewer: AAAI 2026, ICLR 2026</li>
-  <li>Journal Reviewer: Pattern Recognition, Neurocomputing, Information Sciences, ESWA, DMKD</li>
 </ul>
 
 </body>
