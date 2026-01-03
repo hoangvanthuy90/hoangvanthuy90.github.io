@@ -5,6 +5,10 @@
   <title>Van Thuy Hoang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
       max-width: 900px;
@@ -24,27 +28,24 @@
     a:hover {
       text-decoration: underline;
     }
-h1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.underline {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-.highlight {
-  background-color: #fe930c;   /* soft academic blue */
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-weight: 600;            /* optional: remove if you don’t want bold */
-}
- 
-    .note {
-  font-style: italic;
-  color: #555;
-  margin-top: 20px;
-  line-height: 1.6;
-}
+
+    h1 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .underline {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .highlight {
+      background-color: #fe930c;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
     h2 {
       margin-top: 35px;
       border-bottom: 1px solid #ddd;
@@ -58,14 +59,17 @@ h1 {
       font-size: 0.95em;
     }
 
-    /* Horizontal line under top links */
+    .top-links i {
+      margin-right: 4px;
+      color: #555;
+    }
+
     .top-divider {
       border: none;
       border-top: 1px solid #ddd;
       margin: 15px 0 30px 0;
     }
 
-    /* Header layout */
     .header {
       display: flex;
       gap: 30px;
@@ -87,7 +91,7 @@ h1 {
       color: #555;
     }
 
-    ul {
+    ul, ol {
       padding-left: 20px;
     }
 
@@ -118,10 +122,18 @@ h1 {
 
 <!-- TOP LINKS -->
 <div class="top-links">
-  <a href="mailto:hoangvanthuy90@gmail.com">Email</a> ·
-  <a href="https://scholar.google.com.vn/citations?user=E7Cc8rAAAAAJ">Google Scholar</a> ·
-  <a href="https://github.com/hoangvanthuy90">GitHub</a> ·
-  <a href="Curriculum_Vitae_2507.pdf">CV (PDF)</a>
+  <a href="mailto:hoangvanthuy90@gmail.com">
+    <i class="fa-solid fa-envelope"></i>Email
+  </a> ·
+  <a href="https://scholar.google.com.vn/citations?user=E7Cc8rAAAAAJ">
+    <i class="fa-solid fa-graduation-cap"></i>Google Scholar
+  </a> ·
+  <a href="https://github.com/hoangvanthuy90">
+    <i class="fa-brands fa-github"></i>GitHub
+  </a> ·
+  <a href="Curriculum_Vitae_2507.pdf">
+    <i class="fa-solid fa-file-pdf"></i>CV (PDF)
+  </a>
 </div>
 
 <hr class="top-divider">
@@ -135,30 +147,33 @@ h1 {
       The Catholic University of Korea
     </p>
 
-  <p>
-    Hi, I’m Van Thuy Hoang, a PhD Student of the Catholic University of Korea.
-    I’m a member of the
-    <a href="https://nslab-cuk.github.io/" target="_blank">Network Science Lab</a>
-    led by
-    <a href="https://nslab-cuk.github.io/member/ojlee" target="_blank">
-      Professor O-Joun Lee
-    </a>.
-  </p>
+    <p>
+      Hi, I’m Van Thuy Hoang, a PhD Student of the Catholic University of Korea.
+      I’m a member of the
+      <a href="https://nslab-cuk.github.io/" target="_blank">Network Science Lab</a>
+      led by
+      <a href="https://nslab-cuk.github.io/member/ojlee" target="_blank">
+        Professor O-Joun Lee
+      </a>.
+    </p>
 
-<p>
-  I am open to research collaboration and academic opportunities. Please feel free to
-  <a href="mailto:hoangvanthuy90@gmail.com">contact me via email</a> if you are interested.
-</p>
-    
+    <p>
+      I am open to research collaboration and academic opportunities.
+      Please feel free to
+      <a href="mailto:hoangvanthuy90@gmail.com">contact me via email</a>
+      if you are interested.
+    </p>
   </div>
 
   <img src="profile.jpg" alt="Van Thuy Hoang" class="profile-img">
 </div>
 
 <h2>Research Interests</h2>
-My research focuses on AI for Bioinformatics, developing strategies to analyze and interpret biomedical data, such as molecules. 
-  I am particularly interested in Graph Neural Networks (GNNs), Graph Transformers, and Large Language Models (LLMs) for knowledge discovery
-
+<p>
+  My research focuses on AI for Bioinformatics, developing strategies to analyze and interpret
+  biomedical data, such as molecules. I am particularly interested in Graph Neural Networks (GNNs),
+  Graph Transformers, and Large Language Models (LLMs) for knowledge discovery.
+</p>
 
 <h2>Selected Publications</h2>
 
@@ -166,107 +181,22 @@ My research focuses on AI for Bioinformatics, developing strategies to analyze a
   <li>
     <span class="underline">Van Thuy Hoang</span>, O-Joun Lee.
     <em>Pre-training Graph Neural Networks on Molecules by using Subgraph-conditioned Graph Information Bottleneck.</em>
-    In Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI 2025) <span class="highlight">Ranking A*</span>.
+    In Proceedings of the 39th AAAI Conference on Artificial Intelligence (AAAI 2025)
+    <span class="highlight">Ranking A*</span>.
   </li>
   <li>
     <span class="underline">Van Thuy Hoang</span>, Hyeon-Ju Jeon, O-Joun Lee.
     <em>Mitigating Degree Bias in Graph Representation Learning with Learnable Structural Augmentation and Structural Self-attention.</em>
-    IEEE Transactions on Network Science and Engineering (IEEE TNSE 2025) <span class="highlight">Top 3% JCR</span>.
+    IEEE Transactions on Network Science and Engineering (IEEE TNSE 2025)
+    <span class="highlight">Top 3% JCR</span>.
   </li>
   <li>
     <span class="underline">Van Thuy Hoang</span>, O-Joun Lee.
     <em>Transitivity-Preserving Graph Representation Learning for Bridging Local Connectivity and Role-based Similarity.</em>
-    In Proceedings of the 38th AAAI Conference on Artificial Intelligence (AAAI 2024) <span class="highlight">Ranking A*</span>.
+    In Proceedings of the 38th AAAI Conference on Artificial Intelligence (AAAI 2024)
+    <span class="highlight">Ranking A*</span>.
   </li>
 </ul>
 
-  <!-- FULL PUBLICATIONS -->
-<h2>Full Publications</h2>
-
-<div class="pub-year">2025</div>
-<ol>
-  <li>
-    <span class="underline">Van Thuy Hoang</span>, O-Joun Lee.
-    <em>Pre-training Graph Neural Networks on Molecules by using Subgraph-conditioned Graph Information Bottleneck.</em>
-    AAAI 2025 <span class="highlight">Ranking A*</span>.
-  </li>
-  <li>
-    <span class="underline">Van Thuy Hoang</span>, Hyeon-Ju Jeon, O-Joun Lee.
-    <em>Mitigating Degree Bias in Graph Representation Learning with Learnable Structural Augmentation and Structural Self-attention.</em>
-    IEEE Transactions on Network Science and Engineering, 2025 (IEEE TNSE 2025) <span class="highlight">Top 3% JCR</span>.
-  </li>
-  <li>
-    <span class="underline">Van Thuy Hoang</span> et al.
-    <em>Halal or Not: Knowledge Graph Completion for Predicting Cultural Appropriateness of Daily Products.</em>
-    IEEE Access, 2025.
-  </li>
-  <li>
-    <span class="underline">Van Thuy Hoang</span>, O-Joun Lee.
-    <em>Pre-training Graph Neural Networks on 2D and 3D Molecular Structures by using Multi-View Conditional Information Bottleneck.</em>
-    Under review.
-  </li>
-  <li>
-    <span class="underline">Van Thuy Hoang</span>, O-Joun Lee.
-    <em>Context-aware Graph Causality Inference for Few-Shot Molecular Property Prediction.</em>
-    Under review.
-  </li>
-</ol>
-
-<div class="pub-year">2024</div>
-<ol start="6">
-  <li>
-    <span class="underline">Van Thuy Hoang</span>, O-Joun Lee.
-    <em>Transitivity-Preserving Graph Representation Learning for Bridging Local Connectivity and Role-based Similarity.</em>
-    AAAI 2024 <span class="highlight">Ranking A*</span>.
-  </li>
-  <li>
-    Nam-Gyu Jung, <span class="underline">Van Thuy Hoang</span>, O-Joun Lee, Chang Choi.
-    <em>Kiosk Recommendation System based on Self-Supervised Representation Learning of User Behaviors in Offline Retail.</em>
-    IEEE Internet of Things Journal  (IoT 2024) <span class="highlight">Top 3.4% JCR</span>.
-  </li>
-</ol>
-
-<div class="pub-year">2023</div>
-<ol start="8">
-  <li>
-    <span class="underline">Van Thuy Hoang</span> et al.
-    <em>Companion Animal Disease Diagnostics Based on Literal-Aware Medical Knowledge Graph Representation Learning.</em>
-    IEEE Access, 2023.
-  </li>
-  <li>
-    <span class="underline">Van Thuy Hoang</span> et al.
-    <em>Graph Representation Learning and Its Applications: A Survey.</em>
-    Sensors, 2023.
-  </li>
-</ol>
-
-<div class="pub-year">2018</div>
-<ol start="10">
-  <li>
-    <span class="underline">Van Thuy Hoang</span> et al.
-    <em>Automated Large Program Repair Based on Big Code.</em>
-    ISICT 2018.
-  </li>
-  <li>
-    Ly Vu, <span class="underline">Van Thuy Hoang</span> et al.
-    <em>Time Series Analysis for Encrypted Traffic Classification: A Deep Learning Approach.</em>
-    ISCIT 2018.
-  </li>
-</ol>
-
-<div class="pub-year">Preprints</div>
-<ol start="12">
-  <li>
-    <span class="underline">Van Thuy Hoang</span>, O-Joun Lee.
-    <em>A Survey on Structure-Preserving Graph Transformers.</em>
-    arXiv:2401.16176.
-  </li>
-  <li>
-    Thanh Sang Nguyen et al.
-    <em>Connector 0.5: A Unified Framework for Graph Representation Learning.</em>
-    arXiv:2304.13195.
-  </li>
-</ol>
-  
 </body>
 </html>
